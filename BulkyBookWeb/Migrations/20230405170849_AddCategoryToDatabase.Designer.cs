@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BulkyBookWeb.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230405051931_AddCategoryToDatabase")]
+    [Migration("20230405170849_AddCategoryToDatabase")]
     partial class AddCategoryToDatabase
     {
         /// <inheritdoc />
@@ -36,7 +36,7 @@ namespace BulkyBookWeb.Migrations
                     b.Property<DateTime>("CreatedDateTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("DsiplayOrder")
+                    b.Property<int>("DisplayOrder")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
